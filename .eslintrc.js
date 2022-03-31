@@ -20,11 +20,13 @@ module.exports = {
       jsx: true,
     },
     ecmaVersion: 'latest',
+    project: ['./tsconfig.json'],
     sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    '@typescript-eslint/no-unused-vars': ['off'],
   },
   settings: {
     'import/resolver': {
