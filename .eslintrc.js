@@ -27,12 +27,12 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     '@typescript-eslint/no-unused-vars': ['off'],
-  },
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
       },
-    },
+    ],
   },
 };
+
